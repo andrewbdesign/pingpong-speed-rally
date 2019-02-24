@@ -1,0 +1,94 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  width: calc(100% - 2rem);
+  height: 50%;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.icon-serve {
+  width: 100px;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.table div {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+}
+.table p {
+  margin: 0;
+  padding: 0;
+}
+
+.king, .challenger {
+  width: 100%;
+  height: 50%;
+  border-right: 2rem solid #000;
+  position: relative;
+}
+
+.challenger .icon-serve {
+  display: none;
+}
+
+.king {
+  background: linear-gradient(45deg, rgba(234,0,38,1) 0%,rgba(221,0,37,1) 19%,rgba(111,0,33,1) 100%);
+}
+
+.challenger {
+  background: linear-gradient(45deg, rgba(1,151,245,1) 0%,rgba(0,106,234,1) 19%,rgba(0,38,183,1) 100%);
+}
+.serving {
+  border-right: 2rem solid #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+} 
+.bottom {
+  background: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.queue {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.table .name {
+  margin: 20px 0;
+}
+
+.divider {
+  margin: 20px;
+}
+
+.reset {
+  background: linear-gradient(45deg, rgba(253,193,26,1) 2%,rgba(253,193,26,1) 2%,rgba(253,193,26,1) 50%,rgba(242,167,16,1) 100%);
+  padding: 60px;
+  font-size: 3rem;
+}
